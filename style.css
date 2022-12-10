@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(238, 238, 238); */
+    background-color: lightgray;
+}
+header{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+#top_section{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 100%;
+    max-width: 1360px;
+}
+#main_nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+#main_nav li{
+    padding: 20px 8px 20px;
+}
+#main_nav a{
+    white-space: nowrap;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+#main_nav a:hover{
+    color: blueviolet;
+}
+#top_banner{
+    background-color: white;
+    width: 100%;
+    height: 62.5vw;
+    max-height: 850px;
+    display: flex;
+}
+#text_top_banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#text_top_banner h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: min(8vw,80px);
+    font-weight: 600;
+}
+#img_top_banner{
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img_top_banner img{
+    width: 80%;
+    transform: rotate(5deg);
+}
+#top_section_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width: 20px;
+    padding: 10px;
+}
+.purple-button{
+    color: white;
+    background-color: #502785;
+    border: none;
+    white-space: nowrap;
+    padding:10px 20px 10px;
+    border-radius: 8px;
+}
+.purple-button:hover{
+    background-color: #5E4CB2;
+}
+#history_section, #inventory_section, #contact_section, #donation_section{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+#inventory_section .main-container{
+    background-color: rgb(238, 238, 238);
+    padding: 35px;
+}
+#history_section .main-container, #donation_section .main-container, #contact_section .main-container{
+    background-color: white;
+    padding: 35px;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.text-container{
+    text-indent: 30px;
+    text-align: justify;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px
+}
+.card img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card p{
+    font-weight: 600;
+    color: #502785;
+}
+.card:hover p{
+    color: grey;
+}
+.card:hover img{
+    border-radius: 25%;
+}
+#donation_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#donation-text{
+    width: 70vw;
+}
+#donation_button_area{
+    padding: 35px;
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    padding: 20px;
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    background-color: #141414;
+}
+
+.submit-button:hover {
+    background-color: #464646;
+}
+#slogan_section .main-container{
+    height: 30vh;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: larger;
+    color: #502785;
+}
+footer, #slogan_section{
+    display: flex;
+    justify-content: center;
+}
+footer .main-container{
+    background: rgb(191, 191, 191);
+    background: linear-gradient(0deg, rgba(191, 191, 191, 1) 0%, rgba(255, 255, 255, 1) 74%);
+}
+.footer-links{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.links-row{
+    margin: 10px;
+    text-align: center;
+}
+.footer-links a{
+    color: black;
+}
+.footer-extra{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
